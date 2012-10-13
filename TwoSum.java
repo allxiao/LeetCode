@@ -17,6 +17,7 @@ public class Solution {
             vals[i] = new PosVal(i+1, numbers[i]);
         Arrays.sort(vals, new Comparator<PosVal>() {
                 public int compare(PosVal l, PosVal r) {
+                    // overflow/underflow !!
                     return l.val - r.val;
                 }
             });
